@@ -44,7 +44,7 @@ services:
       MYSQL_PORT: 3306
       MYSQL_DB: enrollment_db
       MYSQL_USER: root
-      MYSQL_PASSWORD: root
+      MYSQL_PASSWORD: Armaan@28012005
       REDIS_HOST: redis
       REDIS_PORT: 6379
     depends_on:
