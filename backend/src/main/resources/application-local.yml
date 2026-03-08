@@ -1,0 +1,26 @@
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration
+      - org.springframework.boot.autoconfigure.data.redis.RedisRepositoriesAutoConfiguration
+      - org.springframework.boot.autoconfigure.data.redis.RedisReactiveAutoConfiguration
+      - org.springframework.boot.autoconfigure.cache.RedisCacheAutoConfiguration
+
+  cache:
+    type: simple
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/enrollment_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: Armaan@28012005
+
+app:
+  redis:
+    enabled: false
+  jwt:
+    secret: Y29tcGxleFNlY3JldEtleUZvckpXVFRva2VuR2VuZXJhdGlvbjIwMjQ=
+    expiration: 86400000
+
+logging:
+  level:
+    com.enrollment: DEBUG
